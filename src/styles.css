@@ -55,4 +55,4 @@
 .role-points{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:.86rem;line-height:1.55}.timeline .role-points li{padding:0 0 4px}.timeline .role-points li:before{content:none}.role-points li::marker{color:var(--purple)}.hero-subtitle{max-width:440px}.project-context{display:inline-block;font-size:.7rem;font-weight:600;color:#6620e2;background:#f2ecff;border-radius:12px;padding:2px 9px;margin-bottom:8px}
 .skill-pill{align-self:center;background:#fff;border:1px solid #ddd6ff;color:#3d3a66;border-radius:18px;padding:6px 13px;font-size:.78rem;font-weight:600}
 .skill-items{row-gap:14px}
-.project-live-link + .project-live-link{margin-left:8px}
+.project-live-link{margin-right:8px}

@@ -54,10 +54,28 @@ export const projects: Project[] = [
   },
   {
     name: 'BookSpot', context: 'Own product · lead developer', liveUrl: 'https://bookspot.lk/', platforms: ['Web', 'Mobile'], category: 'Full-stack · Booking marketplace', color: 'blue',
+    preview: 'projects/bookspot-home.webp',
+    previewAlt: 'BookSpot homepage with venue search and categories such as wedding halls, rooms and swimming pools',
+    previewLabel: 'View homepage',
+    previewFullPage: true,
     description: 'A live booking marketplace for halls, pools, photographers and car rentals in Sri Lanka. I lead development with one co-developer and run the hosting.',
     tags: ['Laravel 12', 'MySQL', 'Tailwind CSS', 'Alpine.js', 'Playwright'],
     features: ['Search by service, location and date, then compare prices, photos and available times.', 'Ten-minute slot holds at checkout; advance or full bank-transfer payments with slip upload and vendor confirmation.', 'Four roles (customer, vendor, staff, super admin), refunds, support tickets and push notifications.', '150+ endpoint REST API covered by 700+ PHPUnit tests and Playwright browser tests.', 'GitHub Actions CI with automatic deployment to production.'],
     architecture: 'Laravel 12 REST API and Blade/Tailwind/Alpine.js web front end on MySQL, deployed through GitHub Actions. A companion mobile app is in development.',
+  },
+  {
+    name: 'AI SEO Meta Writer', context: 'My WordPress plugin · AI + SEO', repoUrl: 'https://github.com/Abdul-hakeem18/ai-seo-meta-writer', platforms: ['WordPress'], category: 'WordPress plugin · AI', color: 'purple',
+    preview: 'projects/ai-seo-meta-writer-settings.webp',
+    previewAlt: 'AI SEO Meta Writer settings page with API endpoint, model, tone and post type options',
+    previewLabel: 'View settings screen',
+    screenshots: [
+      { src: 'projects/ai-seo-meta-writer-metabox.webp', caption: 'Editor box: generate, edit and save the description' },
+      { src: 'projects/ai-seo-meta-writer-settings.webp', caption: 'Settings: any OpenAI-compatible API (OpenAI, DeepSeek)' },
+    ],
+    description: 'A WordPress plugin that writes SEO meta descriptions with AI and saves them into Yoast SEO, Rank Math or its own meta tag. Works with OpenAI, DeepSeek or any compatible API.',
+    tags: ['WordPress', 'PHP', 'OpenAI / DeepSeek', 'Yoast SEO', 'Rank Math', 'WP-CLI'],
+    features: ['One-click generation in the editor, with an optional focus keyword and a live 155-character counter.', 'Detects Yoast SEO or Rank Math and saves to their fields; otherwise prints its own meta tag.', 'WooCommerce-aware: uses the product short description first.', 'WP-CLI bulk command for items without a description, with a dry-run mode.', 'Nonces, capability checks, sanitised input and escaped output; API key can live in wp-config.php.', 'PHPUnit tests and GitHub Actions CI on PHP 7.4, 8.1 and 8.3.'],
+    architecture: 'Editor meta box (vanilla JS) → admin-ajax with nonce and capability checks → API client (wp_remote_post) → OpenAI-compatible chat completions API → SEO bridge that writes to Yoast SEO, Rank Math or its own meta.',
   },
   {
     name: 'DropifyPro', context: 'Commercial project', platforms: ['Web'], category: 'Web · E-commerce', color: 'blue',
@@ -127,7 +145,7 @@ export const projects: Project[] = [
     previewLabel: 'View edited preview',
     description: 'A WooCommerce fashion store whose stock, prices and sales stay in sync with the shop\'s three branches through a custom myPOS integration plugin, with Aramex shipping worldwide.',
     tags: ['WordPress', 'WooCommerce', 'myPOS API', 'Aramex', 'Custom Plugins', 'Yoast SEO'],
-    features: ['Homepage with promotional banners and product categories.', 'Product listing with category, size and designer filters.', 'Checkout screens with shipping, billing, coupons and payment options.', 'Custom plugin connecting WooCommerce to the myPOS systems of all three branches, using webhooks plus a 10-minute cron sync for prices, stock and sales.', 'Online orders check stock across every branch before they are placed.', 'Fail-safe: if the POS API stops responding, the store closes to purchases automatically to prevent overselling.', 'Aramex shipping integration for local and international delivery.', 'Custom WordPress plugins tailored to the project.'],
+    features: ['Homepage with promotional banners and product categories.', 'Product listing with category, size and designer filters.', 'Checkout screens with shipping, billing, coupons and payment options.', 'Custom plugin connecting WooCommerce to the myPOS systems of all three branches, using webhooks plus a 10-minute cron sync for prices, stock and sales.', 'Online orders check stock across every branch before they are placed.', 'Fail-safe: if the POS API stops responding, the store closes to purchases automatically to prevent overselling.', 'Aramex shipping integration for local and international delivery.', 'Koko buy-now-pay-later and card payments at checkout.', 'Custom WordPress plugins tailored to the project.'],
     architecture: 'WooCommerce storefront with custom plugins, the Rey theme and Elementor, kept in sync with the in-store myPOS system by a custom integration plugin.'
   },
   {
