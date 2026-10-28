@@ -22,7 +22,7 @@ export type Project = {
 // Ordered by relevance: commercial full-stack and mobile work first, then academic projects.
 export const projects: Project[] = [
   {
-    name: 'POSMate', context: 'Lead developer · team of 3', repoUrl: 'https://github.com/horixpro-dev/posmate-releases/releases', liveUrl: 'https://posmate.horixpro.com/', platforms: ['Web', 'Mobile', 'Desktop'], category: 'Desktop · Web · Mobile', color: 'purple',
+    name: 'POSMate', context: 'Own product · lead developer, team of 3', repoUrl: 'https://github.com/horixpro-dev/posmate-releases/releases', liveUrl: 'https://posmate.horixpro.com/', platforms: ['Web', 'Mobile', 'Desktop'], category: 'Desktop · Web · Mobile', color: 'purple',
     preview: 'projects/posmate-homepage.webp',
     previewAlt: 'POSMate homepage presenting its retail software, hardware options and plans',
     previewLabel: 'View full homepage',
